@@ -1,0 +1,70 @@
+@use "sass:map";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+ul {
+    list-style-type: none;
+}
+
+#forums li, {
+    display: inline-block;
+    min-width: map.get($container-max-widths, "sm");
+}
+
+body {
+    //background-color: #99DDFF;
+    background-color: #EEEEEE;
+}
+
+.content {
+    display: block;
+    background-color: white;
+    min-height: 100%;
+    padding-top: 4.5rem;
+    padding-bottom: 20px;
+}
+
+.content span, .content a {
+    max-width: map.get($container-max-widths, "md");
+    height: 100%;
+}
+
+.messageForm {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.messageForm input, .messageForm textarea, .messageForm button {
+    display: block;
+}
+
+.title {
+    display: block;
+}
+
+.messageForm textarea {
+    width: 100%;
+}
+
+.login a, .login input {
+    margin-right: 2em;
+}
+
+.text {
+    border-style: solid;
+    border-color: #99DDFF; 
+    border-width: 2px;
+    border-radius: 4px;
+}
+
+.time {
+    display: inline;
+    float: right;
+}
